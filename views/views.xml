@@ -12,6 +12,17 @@
         </field>
       </field>
     </record>
+    <!-- This record is for adding the number of ticket in the tree view -->
+    <record model="ir.ui.view" id="ctr_tree_view">
+      <field name="name">ctr.search</field>
+      <field name="model">helpdesk.ticket</field>
+      <field name="inherit_id" ref="helpdesk.helpdesk_tickets_view_tree" />
+      <field name="arch" type="xml">
+          <tree>
+            <field name="numero_ticket"/>
+          </tree>
+      </field>
+    </record>
 
   </data>
 </odoo>

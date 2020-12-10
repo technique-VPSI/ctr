@@ -1,3 +1,4 @@
+<?xml version="1.0" ?>
 <odoo>
   <data>
 
@@ -6,53 +7,11 @@
       <field name="model">ctr.ctr</field>
       <field name="inherit_id" ref="helpdesk.helpdesk_ticket_view_form" />
       <field name="arch" type="xml">
-        <field name="team_id" position="before" >
+        <field name="team_id" position="after" >
           <field name="numero_ticket"/>
         </field>
       </field>
     </record>
 
-
-    <!-- actions opening views on models -->
-<!--
-    <record model="ir.actions.act_window" id="ctr.action_window">
-      <field name="name">ctr window</field>
-      <field name="res_model">ctr.ctr</field>
-      <field name="view_mode">tree,form</field>
-    </record>
--->
-
-    <!-- server action to the one above -->
-<!--
-    <record model="ir.actions.server" id="ctr.action_server">
-      <field name="name">ctr server</field>
-      <field name="model_id" ref="model_ctr_ctr"/>
-      <field name="state">code</field>
-      <field name="code">
-        action = {
-          "type": "ir.actions.act_window",
-          "view_mode": "tree,form",
-          "res_model": model._name,
-        }
-      </field>
-    </record>
--->
-
-    <!-- Top menu item -->
-<!--
-    <menuitem name="ctr" id="ctr.menu_root"/>
--->
-    <!-- menu categories -->
-<!--
-    <menuitem name="Menu 1" id="ctr.menu_1" parent="ctr.menu_root"/>
-    <menuitem name="Menu 2" id="ctr.menu_2" parent="ctr.menu_root"/>
--->
-    <!-- actions -->
-<!--
-    <menuitem name="List" id="ctr.menu_1_list" parent="ctr.menu_1"
-              action="ctr.action_window"/>
-    <menuitem name="Server to list" id="ctr" parent="ctr.menu_2"
-              action="ctr.action_server"/>
--->
   </data>
 </odoo>

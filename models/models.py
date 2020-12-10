@@ -1,16 +1,13 @@
 # -*- coding: utf-8 -*-
 
-# from odoo import models, fields, api
+from odoo import models, fields, api
 
 
-# class ctr(models.Model):
-#     _name = 'ctr.ctr'
-#     _description = 'ctr.ctr'
+ class ctr(models.Model):
+     _name = 'ctr.ctr'
+     _inherit="helpdesk.ticket"
 
-#     name = fields.Char()
-#     value = fields.Integer()
-#     value2 = fields.Float(compute="_value_pc", store=True)
-#     description = fields.Text()
+     numero_ticket = fields.Char(string="Numéro de ticket")
 #
 #     @api.depends('value')
 #     def _value_pc(self):

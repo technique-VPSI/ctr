@@ -4,7 +4,7 @@
 
     <record model="ir.ui.view" id="ctr.list">
       <field name="name">ctr list</field>
-      <field name="model">ctr.ctr</field>
+      <field name="model">helpdesk.ticket</field>
       <field name="inherit_id" ref="helpdesk.helpdesk_ticket_view_form" />
       <field name="arch" type="xml">
         <field name="team_id" position="after" >

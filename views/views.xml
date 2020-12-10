@@ -23,6 +23,17 @@
           </tree>
       </field>
     </record>
+    <!-- This record is for seaching for tickets using the number of ticket -->
+    <record model="ir.ui.view" id="ctr_search_view">
+      <field name="name">ctr.search</field>
+      <field name="model">helpdesk.ticket</field>
+      <field name="inherit_id" ref="helpdesk.helpdesk_tickets_view_search" />
+      <field name="arch" type="xml">
+        <search>
+          <field name="numero_ticket"/>
+        </search>
+      </field>
+    </record>
 
   </data>
 </odoo>

@@ -7,8 +7,14 @@
       <field name="model">helpdesk.ticket</field>
       <field name="inherit_id" ref="helpdesk.helpdesk_ticket_view_form" />
       <field name="arch" type="xml">
-        <field name="team_id" position="after" >
+        <field name="team_id" position="before" >
           <field name="numero_ticket"/>
+        </field>
+        <field name="tag_ids" position="after" >
+          <field name="produit"/>
+        </field>
+        <field name="produit" position="after" >
+          <field name="marque"/>
         </field>
       </field>
     </record>

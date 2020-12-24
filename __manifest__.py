@@ -1,6 +1,6 @@
 {
     'name':'ctr',
-    'summary':'adding some fields',
+    'summary':'builiding a service after sales platform',
     'version':'0.1',
     "depends":[
         "helpdesk",
